@@ -8,6 +8,6 @@ class Solution:
         array = sorted(nums1 + nums2)
         mid = (len(array) - 1) / 2
         if mid == int(mid):
-            return array[mid]
+            return array[int(mid)]
         else:
             return (array[int(mid)] + array[int(mid) + 1]) / 2.0
