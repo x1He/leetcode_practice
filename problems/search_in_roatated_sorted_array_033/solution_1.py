@@ -1,0 +1,17 @@
+class Solution:
+    def search(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
+        for i in range(len(nums) - 1):
+            if nums[i] == target:
+                return i
+        return -1
+
+
+if __name__ == "__main__":
+    temp = Solution()
+    nums = [1]
+    a = temp.search(nums, 1)
