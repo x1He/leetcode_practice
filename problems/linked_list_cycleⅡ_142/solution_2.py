@@ -10,9 +10,9 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        v = {}
+        res = {}
         while head:
-            if head in v:
+            if head in res:
                 return head
-            v[head] = True
+            res[head] = 1
             head = head.next
