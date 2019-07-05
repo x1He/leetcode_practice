@@ -5,8 +5,8 @@ class Solution:
         :type target: int
         :rtype: List[int]
         """
-        dic = {}
-        for index, num in enumerate(nums):
-            if num in dic:
-                return [dic[num], index]
-            dic[target - num] = index
+        d = {}
+        for index, val in enumerate(nums):
+            if target - val in d:
+                return [index. d[target - val]]
+            d[val] = index
